@@ -21,6 +21,8 @@ $(document).ready(function () {
       tallyPython += 1;
     } else if (answer1 === "cSharp1") {
       tallyCSharp += 1;
+    } else {
+      alert("Please answer 'Q1'");
     }
 
     if (answer2 === "javascript1") {
@@ -29,6 +31,8 @@ $(document).ready(function () {
       tallyPython += 1;
     } else if (answer2 === "cSharp1") {
       tallyCSharp += 1;
+    } else {
+      alert("Please answer 'Q2'");
     }
 
     if (answer3 === "javascript1") {
@@ -37,6 +41,8 @@ $(document).ready(function () {
       tallyPython += 1;
     } else if (answer3 === "cSharp1") {
       tallyCSharp += 1;
+    } else {
+      alert("Please answer 'Q3'");
     }
 
     if (answer4 === "javascript1") {
@@ -45,6 +51,8 @@ $(document).ready(function () {
       tallyPython += 1;
     } else if (answer4 === "cSharp1") {
       tallyCSharp += 1;
+    } else {
+      alert("Please answer 'Q4'");
     }
 
     if (answer5 === "javascript1") {
@@ -53,6 +61,8 @@ $(document).ready(function () {
       tallyPython += 1;
     } else if (answer5 === "cSharp1") {
       tallyCSharp += 1;
+    } else {
+      alert("Please answer 'Q5'");
     }
 
     if (tallyJS > tallyPython && tallyJS > tallyCSharp) {
