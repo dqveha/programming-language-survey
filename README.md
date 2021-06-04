@@ -29,7 +29,7 @@ This is a website designed for the user to answer a survey. It has five question
 
 ## Known Bugs
 
-1. If a bonus question appears and the first five quetsions have an answer changed, then the bonus question does not hide. However, the bonus can switch into another question depending if the user submitted answers that required a tie-breaker.
+1. If a bonus question appears and the first five questions have an answer changed, then the bonus question does not hide. However, the bonus question can switch if the user's result requires another tie-breaker.
 
 ## License
 
