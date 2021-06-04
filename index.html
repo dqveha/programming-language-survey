@@ -25,7 +25,7 @@
       <form id="survey1">
         <h5>Q1: How do you like your coffee?</h5>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question1" id="" value="javascript1" checked>
+          <input class="form-check-input" type="radio" name="question1" id="" value="javascript1">
           <label class="form-check-label" for="radio1">
             Java with lots of script
           </label>
@@ -47,7 +47,7 @@
         
         <h5>Q2: What style of programming suits your more?</h5>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question2" id="" value="javascript1" checked>
+          <input class="form-check-input" type="radio" name="question2" id="" value="javascript1">
           <label class="form-check-label" for="">
             Web-based and mobile applications
           </label>
@@ -67,7 +67,7 @@
 
         <h5>Q3: What is your browser choice?</h5>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question3" id="" value="cSharp1" checked>
+          <input class="form-check-input" type="radio" name="question3" id="" value="cSharp1">
           <label class="form-check-label" for="">
             Netzero
           </label>
@@ -87,7 +87,7 @@
 
         <h5>Q4: What is your preferred operating system?</h5>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question4" id="" value="javascript1" checked>
+          <input class="form-check-input" type="radio" name="question4" id="" value="javascript1">
           <label class="form-check-label" for="">
             macOS
           </label>
@@ -105,7 +105,7 @@
 
         <h5>Q5: What type of companies do you want to work for?</h5>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question5" id="" value="javascript1" checked>
+          <input class="form-check-input" type="radio" name="question5" id="" value="javascript1">
           <label class="form-check-label" for="">
             Start-ups
           </label>
@@ -122,9 +122,6 @@
             Skynet
           </label>
         </div>
-
-        <button type="submit" class="btn btn-secondary">Submit!</button>
-
         <div id="hideBonus1">
           <h5>BONUS QUESTION: Would you prefer to be a generalist or specialist?</h5>
           <div class="form-check">
@@ -139,11 +136,7 @@
               Specialist
             </label>
           </div>
-          <button type="submit" class="btn btn-primary">
-            Submit!
-          </button>
         </div>
-
         <div id="hideBonus2">
           <h5>BONUS QUESTION: IT Crowd or Big Bang Theory?</h5>
           <div class="form-check">
@@ -158,11 +151,7 @@
               Big Bang Theory
             </label>
           </div>
-          <button type="submit" class="btn btn-primary">
-            Submit!
-          </button>
         </div>
-
         <div id="hideBonus3">
           <h5>BONUS QUESTION: What would you prefer:</h5>
           <div class="form-check">
@@ -177,91 +166,12 @@
               High speed and performance on a project
             </label>
           </div>
-          <button type="submit" class="btn btn-primary">Submit!</button>
         </div>
+        <button type="submit" class="btn btn-secondary">Submit!</button>
       </form>
-      <div id="answer1">
-        <h2><span id="output1"></span></h2>
-      </div>
-      <div>
-        <h2><span id="output2"></span></h2>
+      <div id="output1">
       </div>
     </div>
   </div>
-
-
 </body>
 </html>
-
-
-
-<!-- 
-
-  1) Javascript
-  2) Python
-  3) C#
-
-  Question
-  1) How do you like your coffee?
-    a) Java with lots of script; Javascript
-    b) With a little sssssass; Python
-    c) A sharper coffee that zings your taste buds away; C#
-
-  2) What style of programming suits your more?
-    a) Web-based and mobile applications; Javascript
-    b) PC Applications; C#
-    c) To do my homework; Python
-
-  3) What is your browser choice?
-    a) Netzero; C#
-    b) AOL; Python
-    c) Netscape; Javascript
-
-  4) What is your preferred operating system?
-    a) macOS; Javascript
-    b) Linux; Python
-    c) Windows; C# 
-
-  5) What type of companies do you want to work for?
-    a) Start-ups; Javascript
-    b) Acclaimed companies such as Microsoft or Apple; C#
-    c) Skynet; Python
-
-  Javascript vs Python Question:
-  Would you prefer to be a generalist or specialist?
-    a) Generalist; Python
-    b) Specialist; Javascript
-
-  Javascript vs C# Question:
-  IT Crowd or Big Bang Theory?
-    a) IT Crowd; C#
-    b) Big Bang Theory; Javascript
-
-  C# vs Python Question:
-  What would you prefer:
-  a) Top performance and reliance on standard syntax and libraries; C#
-  b) High speed and performance on a project; Python
-
-  ==========================
-
-    Layout:
-    1) Form
-    2) Submit button -- if tie, then reveal last question
-    3) Reveals results
-
-    Business-logic:
-    1) Branching ==>
-        If... value of Javascript > python/C# then.. Javascript
-        Else if... value of Python > Javascript/C# then Python
-        Else if... value of C# > Python/Javascript then C#
-        Else if... value of Javascript === Python > C# then ask show another question then..
-          if chose Javascript -> Reveal answer 
-          else Python -> Reveal answer
-        Else if... value of Javascript === C# > Python then ask show another question then..
-          If chose Javascript -> Reveal answer
-          else C# -> Reveal answer
-        Else if... Value of Python === C# > Javascript then ask show another question then..
-          If chose Python -> Reveal answer
-          else C# -> Reveal answer
-
--->

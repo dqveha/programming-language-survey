@@ -3,3 +3,8 @@
 #hideBonus3 {
   display: none;
 }
+
+#output1,
+#output2 {
+  display: none;
+}
