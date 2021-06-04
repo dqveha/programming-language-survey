@@ -67,50 +67,64 @@ $(document).ready(function () {
       tallyCSharp += 1;
     } else {
       alert("Please answer 'Q5'");
-      return;
     }
 
     if (tallyJS > tallyPython && tallyJS > tallyCSharp) {
-      $("#output1").text("You should learn Javascript!").show();
+      $(".output1").hide();
+      $(".output2").hide();
+      $(".output3").hide();
+      $(".output4").hide();
+      $(".output1").text("Survey says: You should learn Javascript!").show();
     } else if (tallyPython > tallyJS && tallyPython > tallyCSharp) {
-      $("#output1").text("You should learn Python!").show();
+      $(".output1").hide();
+      $(".output2").hide();
+      $(".output3").hide();
+      $(".output4").hide();
+      $(".output1").text("Survey says: You should learn Python!").show();
     } else if (tallyCSharp > tallyJS && tallyCSharp > tallyPython) {
-      $("#output1").text("You should learn C#!").show();
+      $(".output1").hide();
+      $(".output2").hide();
+      $(".output3").hide();
+      $(".output4").hide();
+      $(".output1").text("Survey says: You should learn C#!").show();
     } else if (tallyJS === tallyPython && tallyJS > tallyCSharp) {
       $("#hideBonus2").hide();
       $("#hideBonus3").hide();
-      $("#output1").hide();
-      $("#output3").hide();
-      $("#output4").hide();
+      $(".output1").hide();
+      $(".output2").hide();
+      $(".output3").hide();
+      $(".output4").hide();
       $("#hideBonus1").show();
       if (answerBonus1 === "javascript1") {
-        $("#output2").text("You should learn Javascript!").show();
+        $(".output2").text("Survey says: You should learn Javascript!").show();
       } else if (answerBonus1 === "python1") {
-        $("#output2").text("You should learn Python!").show();
+        $(".output2").text("Survey says: You should learn Python!").show();
       }
     } else if (tallyJS === tallyCSharp && tallyJS > tallyPython) {
       $("#hideBonus1").hide();
       $("#hideBonus3").hide();
-      $("#output1").hide();
-      $("#output2").hide();
-      $("#output4").hide();
+      $(".output1").hide();
+      $(".output2").hide();
+      $(".output3").hide();
+      $(".output4").hide();
       $("#hideBonus2").show();
       if (answerBonus2 === "javascript1") {
-        $("#output3").text("You should learn Javascript!").show();
+        $(".output3").text("Survey says: You should learn Javascript!").show();
       } else if (answerBonus2 === "cSharp1") {
-        $("#output3").text("You should learn C#!").show();
+        $(".output3").text("Survey says: You should learn C#!").show();
       }
     } else if (tallyPython === tallyCSharp && tallyPython > tallyJS) {
       $("#hideBonus1").hide();
       $("#hideBonus2").hide();
-      $("#output1").hide();
-      $("#output2").hide();
-      $("#output3").hide();
+      $(".output1").hide();
+      $(".output2").hide();
+      $(".output3").hide();
+      $(".output4").hide();
       $("#hideBonus3").show();
       if (answerBonus3 === "python1") {
-        $("#output4").text("You should learn Python!").show();
+        $(".output4").text("Survey says: You should learn Python!").show();
       } else if (answerBonus3 === "cSharp1") {
-        $("#output4").text("You should learn C#!").show();
+        $(".output4").text("Survey says: You should learn C#!").show();
       }
     }
   });

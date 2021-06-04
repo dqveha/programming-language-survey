@@ -30,7 +30,6 @@ This is a website designed for the user to answer a survey. It has five question
 ## Known Bugs
 
 1. If a bonus question appears and the first five questions have an answer changed, then the bonus question does not hide. However, the bonus question can switch if the user's result requires another tie-breaker.
-2. If the browser window shrinks by its width, the jumbotron will squeeze inside Q1.
 
 ## License
 

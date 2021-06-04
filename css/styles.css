@@ -8,8 +8,23 @@
   display: none;
 }
 
-h5 {
-  margin-top: 1rem;
+.jumbotron {
+  display: none;
+  font-size: larger;
+  float: right;
+  width: 250px;
+  height: 200px;
+}
+
+#floatingBoxRight {
+  font-size: xx-large;
+  text-align: center;
+  float: right;
+  width: 300px;
+  height: 215px;
+  background-color: cornflowerblue;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 button {
@@ -18,16 +33,31 @@ button {
   float: right;
 }
 
-.jumbotron {
-  font-size: larger;
-  float: right;
-  width: 250px;
-  height: 200px;
+h1 {
+  border-bottom: 4px ridge slategrey;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  margin-top: 1rem;
+}
+
+p {
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 450px) {
+  #floatingBoxRight {
+    display: none;
+  }
   .jumbotron {
-    width: 450px;
-    padding: 4rem 4rem 4rem 4rem;
+    display: inline-flex;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    font-size: xx-large;
+    text-align: center;
+    height: 250px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
   }
 }
