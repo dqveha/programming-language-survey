@@ -1,6 +1,5 @@
-
-$(document).ready(function() {
-  $("#survey1").submit(function(event) {
+$(document).ready(function () {
+  $("#survey1").submit(function (event) {
     event.preventDefault();
 
     const answer1 = $("input:radio[name=question1]:checked").val();
@@ -11,7 +10,7 @@ $(document).ready(function() {
     const answerBonus1 = $("input:radio[name=questionBonus1]:checked").val();
     const answerBonus2 = $("input:radio[name=questionBonus2]:checked").val();
     const answerBonus3 = $("input:radio[name=questionBonus3]:checked").val();
-    
+
     let tallyJS = 0;
     let tallyPython = 0;
     let tallyCSharp = 0;
@@ -28,7 +27,7 @@ $(document).ready(function() {
       tallyJS += 1;
     } else if (answer2 === "python1") {
       tallyPython += 1;
-    } else if (answer2 === "cSharp1")  {
+    } else if (answer2 === "cSharp1") {
       tallyCSharp += 1;
     }
 
@@ -36,7 +35,7 @@ $(document).ready(function() {
       tallyJS += 1;
     } else if (answer3 === "python1") {
       tallyPython += 1;
-    } else if (answer3 === "cSharp1")  {
+    } else if (answer3 === "cSharp1") {
       tallyCSharp += 1;
     }
 
@@ -44,7 +43,7 @@ $(document).ready(function() {
       tallyJS += 1;
     } else if (answer4 === "python1") {
       tallyPython += 1;
-    } else if (answer4 === "cSharp1")  {
+    } else if (answer4 === "cSharp1") {
       tallyCSharp += 1;
     }
 
@@ -52,7 +51,7 @@ $(document).ready(function() {
       tallyJS += 1;
     } else if (answer5 === "python1") {
       tallyPython += 1;
-    } else if (answer5 === "cSharp1")  {
+    } else if (answer5 === "cSharp1") {
       tallyCSharp += 1;
     }
 
@@ -62,32 +61,45 @@ $(document).ready(function() {
       $("#output1").text("You should learn Python!").show();
     } else if (tallyCSharp > tallyJS && tallyCSharp > tallyPython) {
       $("#output1").text("You should learn C#!").show();
-    } else if ((tallyJS === tallyPython) && (tallyJS > tallyCSharp)) {
-      $("#hideBonus2 #hideBonus3").hide();
+    } else if (tallyJS === tallyPython && tallyJS > tallyCSharp) {
+      $("#hideBonus2").hide();
+      $("#hideBonus3").hide();
+      $("#output1").hide();
+      $("#output3").hide();
+      $("#output4").hide();
       $("#hideBonus1").show();
       if (answerBonus1 === "javascript1") {
-        $("#output1").text("You should learn Javascript!").show();
+        $("#output2").text("You should learn Javascript!").show();
       } else if (answerBonus1 === "python1") {
-        $("#output1").text("You should learn Python!").show();
+        $("#output2").text("You should learn Python!").show();
       }
-    } else if ((tallyJS === tallyCSharp) && (tallyJS > tallyPython)) {
-      $("#hideBonus1 #hideBonus3").hide();
+    } else if (tallyJS === tallyCSharp && tallyJS > tallyPython) {
+      $("#hideBonus1").hide();
+      $("#hideBonus3").hide();
+      $("#output1").hide();
+      $("#output2").hide();
+      $("#output4").hide();
       $("#hideBonus2").show();
       if (answerBonus2 === "javascript1") {
-        $("#output1").text("You should learn Javascript!").show();
+        $("#output3").text("You should learn Javascript!").show();
       } else if (answerBonus2 === "cSharp1") {
-        $("#output1").text("You should learn C#!").show();
+        $("#output3").text("You should learn C#!").show();
       }
-    } else if ((tallyPython === tallyCSharp) && (tallyPython > tallyJS)) {
-      $("#hideBonus2 #hideBonus1").hide();
+    } else if (tallyPython === tallyCSharp && tallyPython > tallyJS) {
+      $("#hideBonus1").hide();
+      $("#hideBonus2").hide();
+      $("#output1").hide();
+      $("#output2").hide();
+      $("#output3").hide();
       $("#hideBonus3").show();
       if (answerBonus3 === "python1") {
-        $("#output1").text("You should learn Python!").show();
-    } else if (answerBonus3 === "cSharp1") {
-        $("#output1").text("You should learn C#!").show();
+        $("#output4").text("You should learn Python!").show();
+      } else if (answerBonus3 === "cSharp1") {
+        $("#output4").text("You should learn C#!").show();
       }
     }
   });
 });
 
-// Bugs -- bonus question does not hide if original answers changed
+// Bugs --
+// 1)bonus question does not hide if original answers changed

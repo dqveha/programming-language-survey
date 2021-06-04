@@ -1,177 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progamming Language Survey</title>
-</head>
-<body>
-  <div class="container">
-    
-    <!-- Header -->
-    <div class="container">
-      <h1>What is your programming language?</h1>
-      <p>This is a survey to help you understand which programming language you should start! There are five questions to answer. Once you submit, the survey will either show your result, or have you answer a bonus question to help us decide your language!</p>
-    </div>
-  
-    <!-- Form -->
-    
-    <div class="container">
-      <form id="survey1">
-        <h5>Q1: How do you like your coffee?</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question1" id="" value="javascript1">
-          <label class="form-check-label" for="radio1">
-            Java with lots of script
-          </label>
+  <head>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progamming Language Survey</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="container">
+        <h1>What is your programming language?</h1>
+        <p>
+          This is a survey to help you understand which programming language to start! There are five questions to answer. Once you submit, the survey will either show your result, or have you answer a bonus question to help us decide your language!
+        </p>
+      </div>
+      <div class="container mt-2">
+        <div class="jumbotron mt-5">
+          <div id="output1"></div>
+          <div id="output2"></div>
+          <div id="output3"></div>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question1" id="" value="python1">
-          <label class="form-check-label" for="radio2">
-            With a little sssssass
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question1" id="" value="cSharp1">
-          <label class="form-check-label" for="radio3">
-            A sharper coffee that zaps your taste buds away
-          </label>
-        </div>
+        <form id="survey1">
+          
+          <h5>Q1: How do you like your coffee?</h5>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question1"
+              value="javascript1"
+            />
+            <label class="form-check-label">
+              Java with lots of script
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question1"
+              value="python1"
+            />
+            <label class="form-check-label">
+              With a little <i>sSSsSass</i>
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question1"
+              value="cSharp1"
+            />
+            <label class="form-check-label">
+              Painfully sharp and pointy
+            </label>
+          </div>
+
+          <h5>Q2: What style of programming suits your more?</h5>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question2"
+              value="javascript1"
+            />
+            <label class="form-check-label">
+              Web-based and mobile applications
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question2"
+              value="cSharp1"
+            />
+            <label class="form-check-label"> 
+              PC Applications 
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question2"
+              value="python1"
+            />
+            <label class="form-check-label">
+              Ones that do your homework
+            </label>
+          </div>
+
+          <h5>Q3: What is your browser choice?</h5>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question3"
+              value="cSharp1"
+            />
+            <label class="form-check-label"> 
+              Netzero 
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question3"
+              value="python1"
+            />
+            <label class="form-check-label"> 
+              AOL 
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question3"
+              value="javascript1"
+            />
+            <label class="form-check-label"> 
+              Netscape 
+            </label>
+          </div>
+
+          <h5>Q4: What is your preferred operating system?</h5>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question4"
+              value="javascript1"
+            />
+            <label class="form-check-label"> 
+              macOS 
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question4"
+              value="python1"
+            />
+            <label class="form-check-label"> 
+              Linux 
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question4"
+              value="cSharp1"
+            />
+            <label class="form-check-label">
+              Windows
+            </label>
+          </div>
+
+          <h5>Q5: What type of companies do you want to work for?</h5>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question5"
+              value="javascript1"
+            />
+            <label class="form-check-label"> 
+              Start-ups 
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question5"
+              value="cSharp1"
+            />
+            <label class="form-check-label">
+              Microsoft
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="question5"
+              value="python1"
+            />
+            <label class="form-check-label"> 
+              Skynet 
+            </label>
+          </div>
+
+          <div id="hideBonus1">
+            <h5>BONUS QUESTION: Would you prefer to be a generalist or specialist?</h5>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="questionBonus1"
+                value="python1"
+              />
+              <label class="form-check-label"> 
+                Generalist 
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="questionBonus1"
+                value="javascript1"
+              />
+              <label class="form-check-label"> 
+                Specialist 
+              </label>
+            </div>
+          </div>
+
+          <div id="hideBonus2">
+            <h5>BONUS QUESTION: IT Crowd or Big Bang Theory?</h5>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="questionBonus2"
+                value="cSharp1"
+              />
+              <label class="form-check-label"> 
+                IT Crowd 
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="questionBonus2"
+                value="javascript1"
+              />
+              <label class="form-check-label"> 
+                Big Bang Theory 
+              </label>
+            </div>
+          </div>
+
+          <div id="hideBonus3">
+            <h5>BONUS QUESTION: What would you prefer:</h5>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="questionBonus3"
+                value="cSharp1"
+              />
+              <label class="form-check-label">
+                Top performance and reliance on standard syntax and libraries
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="questionBonus3"
+                value="python1"
+              />
+              <label class="form-check-label">
+                High speed and performance on a project
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit!</button>
+        </form>
         
-
-        
-        <h5>Q2: What style of programming suits your more?</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question2" id="" value="javascript1">
-          <label class="form-check-label" for="">
-            Web-based and mobile applications
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question2" id="" value="cSharp1">
-          <label class="form-check-label" for="">
-            PC Applications
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question2" id="" value="python1">
-          <label class="form-check-label" for="">
-            Ones that do your homework
-          </label>
-        </div>
-
-        <h5>Q3: What is your browser choice?</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question3" id="" value="cSharp1">
-          <label class="form-check-label" for="">
-            Netzero
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question3" id="" value="python1">
-          <label class="form-check-label" for="">
-            AOL
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question3" id="" value="javascript1">
-          <label class="form-check-label" for="">
-            Netscape
-          </label>
-        </div>
-
-        <h5>Q4: What is your preferred operating system?</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question4" id="" value="javascript1">
-          <label class="form-check-label" for="">
-            macOS
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question4" id="" value="python1">
-          <label class="form-check-label" for="">
-            Linux
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question4" id="" value="cSharp1">
-          <label class="form-check-label" for="">Windows</label>
-        </div>
-
-        <h5>Q5: What type of companies do you want to work for?</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question5" id="" value="javascript1">
-          <label class="form-check-label" for="">
-            Start-ups
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question5" id="" value="cSharp1">
-          <label class="form-check-label" for="">
-            Acclaimed companies such as Microsoft and StackOverflow
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="question5" id="" value="python1">
-          <label class="form-check-label" for="">
-            Skynet
-          </label>
-        </div>
-        <div id="hideBonus1">
-          <h5>BONUS QUESTION: Would you prefer to be a generalist or specialist?</h5>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="questionBonus1" id="" value="python1">
-            <label class="form-check-label" for="">
-              Generalist
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="questionBonus1" id="" value="javascript1">
-            <label class="form-check-label" for="">
-              Specialist
-            </label>
-          </div>
-        </div>
-        <div id="hideBonus2">
-          <h5>BONUS QUESTION: IT Crowd or Big Bang Theory?</h5>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="questionBonus2" id="" value="cSharp1">
-            <label class="form-check-label" for="">
-              IT Crowd
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="questionBonus2" id="" value="javascript1">
-            <label class="form-check-label" for="">
-              Big Bang Theory
-            </label>
-          </div>
-        </div>
-        <div id="hideBonus3">
-          <h5>BONUS QUESTION: What would you prefer:</h5>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="questionBonus3" id="" value="cSharp1">
-            <label class="form-check-label" for="">
-              Top performance and reliance on standard syntax and libraries
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="questionBonus3" id="" value="python1">
-            <label class="form-check-label" for="">
-              High speed and performance on a project
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-secondary">Submit!</button>
-      </form>
-      <div id="output1">
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
