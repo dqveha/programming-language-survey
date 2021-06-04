@@ -14,6 +14,7 @@ h5 {
 
 button {
   margin-top: 1rem;
+  margin-right: 2rem;
   float: right;
 }
 
@@ -22,5 +23,11 @@ button {
   float: right;
   width: 250px;
   height: 200px;
-  margin-right: 2rem;
+}
+
+@media (max-width: 450px) {
+  .jumbotron {
+    width: 450px;
+    padding: 4rem 4rem 4rem 4rem;
+  }
 }

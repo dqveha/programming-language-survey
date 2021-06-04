@@ -12,7 +12,7 @@
 
 ## Description
 
-This is a website designed for the user to answer a survey. It has five questions with the possibility of another question if it requires a tie-breaker. All together, there are 8 questions within the document.
+This is a website designed for the user to answer a survey. It has five questions with the possibility of another one if it requires a tie-breaker. There is an alert if the user does not answer a question. All together, there are 8 questions within the document with three possible results.
 
 ## Setup/Installation Requirements:
 
@@ -30,6 +30,7 @@ This is a website designed for the user to answer a survey. It has five question
 ## Known Bugs
 
 1. If a bonus question appears and the first five questions have an answer changed, then the bonus question does not hide. However, the bonus question can switch if the user's result requires another tie-breaker.
+2. If the browser window shrinks by its width, the jumbotron will squeeze inside Q1.
 
 ## License
 

@@ -23,6 +23,7 @@ $(document).ready(function () {
       tallyCSharp += 1;
     } else {
       alert("Please answer 'Q1'");
+      return;
     }
 
     if (answer2 === "javascript1") {
@@ -33,6 +34,7 @@ $(document).ready(function () {
       tallyCSharp += 1;
     } else {
       alert("Please answer 'Q2'");
+      return;
     }
 
     if (answer3 === "javascript1") {
@@ -43,6 +45,7 @@ $(document).ready(function () {
       tallyCSharp += 1;
     } else {
       alert("Please answer 'Q3'");
+      return;
     }
 
     if (answer4 === "javascript1") {
@@ -53,6 +56,7 @@ $(document).ready(function () {
       tallyCSharp += 1;
     } else {
       alert("Please answer 'Q4'");
+      return;
     }
 
     if (answer5 === "javascript1") {
@@ -63,6 +67,7 @@ $(document).ready(function () {
       tallyCSharp += 1;
     } else {
       alert("Please answer 'Q5'");
+      return;
     }
 
     if (tallyJS > tallyPython && tallyJS > tallyCSharp) {
@@ -110,6 +115,3 @@ $(document).ready(function () {
     }
   });
 });
-
-// Bugs --
-// 1)bonus question does not hide if original answers changed
